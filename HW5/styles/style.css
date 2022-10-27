@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-semibold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Homemade";
+    src: url("../fonts/HomemadeApple.woff2") format("woff2");
+}
+
+body {
+    font-family: "Gilroy";
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 46px;
+    border: 1px solid #f7941e;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #f7941e;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.btn--accent {
+    background-color: #f7941e;
+    color: #fff;
+    border: none;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 40px;
+}
+
+.logo {
+    font-family: "Homemade";
+    font-size: 18px;
+    line-height: 39px;
+    color: #231f20;
+}
+
+.menu {
+    display: flex;
+    gap: 31px;
+}
+
+.header__btn {
+    padding: 13px 20px;
+    line-height: 22px;
+}
+
+.hero {
+    background-color: #f1f1f2;
+}
+
+.layout-2-columns {
+    display: flex;
+}
+
+.hero__text, .hero__image {
+    width: 50%;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 162px;
+}
+
+.heading {
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 69px;
+    font-weight: 600;
+}
+
+.hero__description {
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hero__title {
+    margin-bottom: 23px;
+}
+
