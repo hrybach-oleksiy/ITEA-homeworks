@@ -21,6 +21,7 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 .btn {
@@ -43,22 +44,28 @@ img {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 45px;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 34px 40px;
 }
 
 .logo {
+    width: 25%;
     font-family: "Homemade";
     font-size: 18px;
     line-height: 39px;
     color: #231f20;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 
 .menu {
@@ -69,6 +76,13 @@ img {
 .header__btn {
     padding: 13px 20px;
     line-height: 22px;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
 }
 
 .hero {
@@ -93,18 +107,122 @@ img {
 
 .heading {
     margin-bottom: 36px;
-    font-size: 56px;
+    font-size: 3.5rem;
     line-height: 69px;
     font-weight: 600;
 }
 
 .hero__description {
     margin-bottom: 52px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 28px;
+}
+
+.hero__description--mb {
+    margin-bottom: 35px;
 }
 
 .hero__title {
     margin-bottom: 23px;
 }
 
+
+@media screen and (min-width: 1441px) {
+    html {
+        font-size: 20px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .header, .logo {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width: 1439px) {
+    .hero__text {
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .heading {
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 13px 46px;
+    }
+
+    .header__btn {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .layout-2-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero__text, .hero__image {
+        width: 100%;
+    }
+
+    .hero__text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        order: -1;
+    }
+
+    .hero__image img{
+        width: 100%;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 9px 18px;
+        font-size: 12px;
+    }
+
+   .header {
+    padding: 10px 10px;
+    justify-content: space-between;
+   }
+
+  .nav {
+    display: none;
+  }
+
+  .header__btn {
+    padding: 6px;
+    font-size: 10px;
+    width: auto;
+  }
+}
