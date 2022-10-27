@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form {
+    border: 2px solid lightgreen;
+}
+
+.form__header {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    background-color: lightgreen;
+    align-items: center;
+}
+
+input, textarea, select {
+    border: 1px solid #bebebe;
+}
+
+label, p, span {
+    font-weight: 700;
+}
+
+select, .form__footer, input {
+    padding: 3px;
+}
+
+input, textarea, select, span, label, p, .form__url-wrapper, .radio {
+    width: 50%;
+}
+
+details {
+    max-width: 500px;
+}
+
+textarea {
+    resize: none;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.form__main {
+    display: flex;
+    padding: 20px 30px 10px 10px;
+    gap: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+    gap: 20px;
+    width: calc(50% - 100px);
+}
+
+.form__wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form__url-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.url {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.url label {
+    font-weight: 400;
+    width: auto;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio__wrapper {
+    display: flex;
+    gap: 3px;
+}
+
+.radio__wrapper label {
+    font-weight: 400;
+}
+
+.form__footer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: lightgrey;
+}
+
+input[type="submit"],  input[type="reset"]{
+    min-width: 100px;
+    width: auto;
+    background-color: lightgreen;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+label[for="home-phone"] + input,  label[for="fax"] + input {
+    width: 25%;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+label[for="first-name"]::after,  label[for="last-name"]::after, label[for="work-phone"]::after, label[for="email"]::after{
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}

@@ -1,0 +1,108 @@
+
+/* fonts */
+@font-face {
+    font-family: "Noto Serif";
+    src: url('./fonts/NotoSerif-Regular.ttf') format("truetype");
+}
+
+
+/* general styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+
+img {
+    display: inline-block;
+    width: 220px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mt {
+    margin-top: 60px;
+}
+
+
+/* header styles */
+.menu{
+    font-size: 26px;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    
+}
+
+.menu__item{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu__link{
+    color: inherit;
+}
+
+
+/* section agile styles */
+.agile__img {
+    margin: 0 10px 0 0;
+}
+
+#agile span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* section trust styles */
+.trust__img {
+    margin: 0 0 0 10px;
+}
+
+.trust__strong {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+/* section delegating styles */
+#delegating ol {
+    margin-top: 0;
+}
+
+#delegating li {
+    font-style: italic;
+}
+
+.delegating__img {
+    margin: 0 10px 0 0;
+}
+

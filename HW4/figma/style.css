@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #f7f7f8;
+}
+
+img {
+    display: block;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.gap {
+    gap: 8px; 
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    min-height: 590px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.recipe__heading {
+    color: #33bbff;
+    font-size: 18px;
+}
+
+.recipe__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.recipe__cost, .recipe__time {
+    display: flex;
+    align-items: center;
+}
