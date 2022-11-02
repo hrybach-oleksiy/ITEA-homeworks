@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   padding: 21px 46px;
-  border: 1px solid #f7941e;
+  border: 1px solid $accent;
   border-radius: 5px;
   text-transform: uppercase;
-  color: #f7941e;
+  color: $accent;
   font-size: 18px;
   line-height: 24px;
 
@@ -20,8 +20,8 @@
   }
 
   &--accent {
-    background-color: #f7941e;
-    color: #fff;
+    background-color: $accent;
+    color: $light;
     border: none;
   }
 }
