@@ -1,0 +1,17 @@
+.layout-2-columns {
+  display: flex;
+
+  > * {
+    width: 50%;
+  }
+
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > * {
+      width: 100%;
+    }
+  }
+}

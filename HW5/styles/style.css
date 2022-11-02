@@ -76,7 +76,6 @@ img {
 .header__btn {
     padding: 13px 20px;
     line-height: 22px;
-    
 }
 
 .header__wrapper {
@@ -141,7 +140,6 @@ img {
     }
 }
 
-
 @media screen and (max-width: 1439px) {
     .hero__text {
         padding: 0 20px;
@@ -173,6 +171,10 @@ img {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .hero__description {
+        text-align: center;
     }
 
     .layout-2-columns {

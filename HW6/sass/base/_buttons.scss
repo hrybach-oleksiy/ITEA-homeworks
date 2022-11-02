@@ -1,0 +1,27 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 46px;
+  border: 1px solid #f7941e;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #f7941e;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include media-tablet {
+    padding: 13px 46px;
+  }
+
+  @include media-mobile {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+
+  &--accent {
+    background-color: #f7941e;
+    color: #fff;
+    border: none;
+  }
+}
