@@ -12,9 +12,12 @@
 @import "./base/headings";
 
 //Layout
+@import "./layout/container";
 @import "./layout/columns";
 @import "./layout/header";
 
 //Components
 @import "./components/menu";
 @import "./components/hero";
+@import "./components/gifts";
+@import "./components/card";
