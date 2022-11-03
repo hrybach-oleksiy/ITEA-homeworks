@@ -453,4 +453,34 @@ img {
 
 .blogs__quotation {
   margin-bottom: 71px;
+}
+
+.banner {
+  grid-template-columns: 1fr 2fr;
+  align-items: stretch;
+  gap: 20px;
+  background-color: #231f20;
+  color: #fff;
+}
+
+.banner__text {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 63px 0 49px;
+}
+
+.banner__name {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.banner__title {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.banner__link {
+  align-self: end;
+  font-size: 18px;
+  line-height: 140.62%;
 }/*# sourceMappingURL=style.css.map */
