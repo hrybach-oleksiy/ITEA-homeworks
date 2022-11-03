@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 31px;
+}

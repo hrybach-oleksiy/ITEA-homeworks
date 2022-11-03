@@ -1,0 +1,11 @@
+.layout-grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

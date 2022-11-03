@@ -1,0 +1,26 @@
+html {
+  @include media-desctop {
+    font-size: 20px;
+  }
+
+  @include media-tablet {
+    font-size: 14px;
+  }
+
+  @include media-mobile {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+img {
+  max-width: 100%;
+  display: block;
+
+  @include media-desctop {
+    width: 100%;
+  }
+}

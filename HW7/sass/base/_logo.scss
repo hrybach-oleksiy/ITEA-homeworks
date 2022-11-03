@@ -1,0 +1,11 @@
+.logo {
+  width: 25%;
+  font-family: "Homemade";
+  font-size: 18px;
+  line-height: 39px;
+  color: $dark;
+
+  @include media-desctop {
+    font-size: 26px;
+  }
+}

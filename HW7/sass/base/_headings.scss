@@ -1,0 +1,21 @@
+.title {
+  font-size: 2rem;
+  line-height: 45px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 36px;
+  font-size: 3.5rem;
+  line-height: 69px;
+  font-weight: 600;
+
+  @include media-laptop {
+    text-align: center;
+    line-height: normal;
+  }
+
+  @include media-tablet {
+    text-align: center;
+  }
+}
