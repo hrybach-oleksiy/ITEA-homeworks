@@ -441,4 +441,16 @@ img {
 
 .sign-up__subtitle {
   font-weight: 400;
+}
+
+.blogs {
+  padding: 88px 0 80px;
+}
+
+.blogs__title {
+  margin-bottom: 23px;
+}
+
+.blogs__quotation {
+  margin-bottom: 71px;
 }/*# sourceMappingURL=style.css.map */
