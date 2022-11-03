@@ -6,6 +6,10 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @include media-small-mobile {
+    padding: 30px;
+  }
 }
 
 .gifts__cards {

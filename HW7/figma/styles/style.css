@@ -372,6 +372,11 @@ img {
     padding-right: 40px;
   }
 }
+@media (max-width: 768px) {
+  .gifts {
+    padding: 30px;
+  }
+}
 
 .gifts__cards {
   gap: 30px;
@@ -424,6 +429,11 @@ img {
   padding: 81px 0 69px;
   background-color: #f7941e;
 }
+@media (max-width: 768px) {
+  .sign-up {
+    padding: 24px 0;
+  }
+}
 
 .sign-up__buttons {
   display: grid;
@@ -446,6 +456,11 @@ img {
 .blogs {
   padding: 88px 0 80px;
 }
+@media (max-width: 768px) {
+  .blogs {
+    padding: 30px 0 0;
+  }
+}
 
 .blogs__title {
   margin-bottom: 23px;
@@ -455,21 +470,50 @@ img {
   margin-bottom: 71px;
 }
 
+.blogs__wrapper {
+  margin-bottom: 40px;
+}
+
 .banner {
   grid-template-columns: 1fr 2fr;
   align-items: stretch;
-  gap: 20px;
   background-color: #231f20;
   color: #fff;
+}
+@media (max-width: 992px) {
+  .banner {
+    grid-template-columns: 1fr;
+    background-color: #fff;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    gap: 0;
+  }
 }
 
 .banner__text {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  padding: 63px 0 49px;
+  grid-template-columns: 492px;
+  grid-template-rows: 1fr 2fr 1fr;
+  background-color: #231f20;
+}
+@media (max-width: 992px) {
+  .banner__text {
+    grid-template-columns: auto;
+    justify-self: stretch;
+    gap: 20px;
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .banner__text {
+    padding: 0 30px;
+  }
 }
 
 .banner__name {
+  align-self: center;
   font-size: 14px;
   line-height: 20px;
 }
@@ -480,7 +524,42 @@ img {
 }
 
 .banner__link {
-  align-self: end;
+  align-self: center;
   font-size: 18px;
   line-height: 140.62%;
+}
+
+.blog {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 16px;
+  padding: 53px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 992px) {
+  .blog {
+    padding: 30px;
+  }
+}
+
+.blog__title {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.blog__descr {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.blog__link {
+  font-size: 14px;
+  line-height: 20px;
+}
+.blog__link a {
+  transition: all 0.3s ease-in;
+}
+.blog__link a:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+.banner {
+  grid-template-columns: 1fr 2fr;
+  align-items: stretch;
+  background-color: $dark;
+  color: $light;
+
+  @include media-tablet {
+    grid-template-columns: 1fr;
+    background-color: $light;
+  }
+
+  @include media-small-mobile {
+    gap: 0;
+  }
+}
+
+.banner__text {
+  display: grid;
+  grid-template-columns: 492px;
+  grid-template-rows: 1fr 2fr 1fr;
+  background-color: $dark;
+
+  @include media-tablet {
+    grid-template-columns: auto;
+    justify-self: stretch;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  @include media-small-mobile {
+    padding: 0 30px;
+  }
+}
+
+.banner__name {
+  align-self: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.banner__title {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.banner__link {
+  align-self: center;
+  font-size: 18px;
+  line-height: 140.62%;
+}

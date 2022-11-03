@@ -1,6 +1,10 @@
 .sign-up {
   padding: 81px 0 69px;
   background-color: $accent;
+
+  @include media-small-mobile {
+    padding: 24px 0;
+  }
 }
 
 .sign-up__buttons {
