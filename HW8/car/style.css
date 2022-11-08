@@ -1,0 +1,59 @@
+
+.container {
+	height: 70vh;
+	width: 100%;
+    position:relative;
+}
+
+.car {
+	width: 30vw;
+	right: 0;
+	bottom: 8vw;
+	position: absolute;
+}
+
+.car img{
+	width: 100%;
+	animation: car 1s linear infinite;
+}
+
+@keyframes car{
+	100% {
+		transform:translateY(-1px);
+	}
+
+	50% {
+		transform:translateY(1px);
+	}
+
+	0% {
+		transform:translateY(-1px);
+	}
+}
+
+.car-wheel {
+	right: 0;
+	bottom: 12vw;
+	position: absolute;
+}
+
+.car-wheel img{
+	width: 5vw;
+	animation:car-wheel 1s linear infinite;
+}
+
+.front-wheel {
+	right: 22vw;
+	position: absolute;
+}
+
+.back-wheel {
+	right: 3vw;
+	position: absolute;
+}
+
+@keyframes car-wheel{
+	100% {
+		transform:rotate(-360deg);
+	}
+}
