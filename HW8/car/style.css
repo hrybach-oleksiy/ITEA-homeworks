@@ -17,6 +17,28 @@
   animation: car 1s linear infinite;
 }
 
+.car-wheel {
+  right: 0;
+  bottom: 4vw;
+  position: absolute;
+  animation: moove 10s linear infinite;
+}
+
+.car-wheel img {
+  width: 5vw;
+  animation: car-wheel 10s linear infinite;
+}
+
+.front-wheel {
+  right: 22vw;
+  position: absolute;
+}
+
+.back-wheel {
+  right: 3vw;
+  position: absolute;
+}
+
 @keyframes car {
   0% {
     transform: translateY(-1px);
@@ -31,31 +53,25 @@
   }
 }
 
-.car-wheel {
-  right: 0;
-  bottom: 4vw;
-  position: absolute;
-  animation: moove 10s linear infinite;
-}
-
-.car-wheel img {
-  width: 5vw;
-  animation: car-wheel 1s linear infinite;
-}
-
-.front-wheel {
-  right: 22vw;
-  position: absolute;
-}
-
-.back-wheel {
-  right: 3vw;
-  position: absolute;
-}
-
 @keyframes car-wheel {
-  100% {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-180deg);
+  }
+
+  50% {
     transform: rotate(-360deg);
+  }
+
+  75% {
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }
 
