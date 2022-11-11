@@ -110,4 +110,25 @@ body {
 img {
   width: 100%;
   display: block;
+}
+
+.bg-main {
+  background-color: #fff7f4;
+}
+
+.fs-small {
+  font-size: 10px;
+}
+
+.ico-size {
+  width: 14px;
+  height: 14px;
+}
+
+.section-pt {
+  padding-top: 117px;
+}
+
+.section-pb {
+  padding-bottom: 149px;
 }/*# sourceMappingURL=style.css.map */
