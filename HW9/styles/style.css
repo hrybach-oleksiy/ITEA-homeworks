@@ -121,6 +121,10 @@ img {
   background-color: #ff5300;
 }
 
+button.active {
+  background-color: #ff5300 !important;
+}
+
 .color-accent {
   color: #ff5300;
 }
@@ -135,6 +139,17 @@ img {
 
 .color-text {
   color: #7b7b7b;
+}
+
+a.active {
+  color: #ff5300 !important;
+}
+
+button.nav-link {
+  color: #7b7b7b;
+}
+button.nav-link:hover {
+  color: #3a3b3c;
 }
 
 .fs-small {
@@ -154,18 +169,24 @@ img {
   font-family: "Work Sans";
 }
 
-.ico-size {
+.size-14 {
   width: 14px;
   height: 14px;
 }
 
-@media (min-width: 1400px) {
+.section-pt {
+  padding-top: 60px;
+}
+@media (min-width: 992px) {
   .section-pt {
     padding-top: 117px;
   }
 }
 
-@media (min-width: 1400px) {
+.section-pb {
+  padding-bottom: 60px;
+}
+@media (min-width: 992px) {
   .section-pb {
     padding-bottom: 149px;
   }
@@ -176,6 +197,9 @@ img {
   border-color: #373737;
 }
 
-.navbar-nav > .active > a {
-  color: #ff5300;
+.heading-pseudo::before, .heading-pseudo::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #ff5300;
 }/*# sourceMappingURL=style.css.map */

@@ -1,17 +1,3 @@
-html {
-  // @include media-desctop {
-  //   font-size: 20px;
-  // }
-
-  // @include media-tablet {
-  //   font-size: 14px;
-  // }
-
-  // @include media-mobile {
-  //   font-size: 12px;
-  // }
-}
-
 body {
   font-family: "Poppins";
   font-weight: 500;
@@ -21,12 +7,7 @@ body {
 img {
   width: 100%;
   display: block;
-
-  // @include media-desctop {
-  //   width: 100%;
-  // }
 }
-
 
 //backgrounds
 .bg-main {
@@ -37,11 +18,15 @@ img {
   background-color: $accent;
 }
 
-//colors
+button.active {
+  background-color: $accent!important;
+}
 
+//colors
 .color-accent {
   color: $accent;
 }
+
 .color-light {
   color: $light;
 }
@@ -52,6 +37,18 @@ img {
 
 .color-text {
   color: $parahraph-gray;
+}
+
+a.active {
+  color: $accent!important;
+}
+
+button.nav-link {
+  color: $parahraph-gray;
+
+  &:hover {
+    color: $black-liquoris;
+  }
 }
 
 //fonts
@@ -72,27 +69,29 @@ img {
 }
 
 //sizes
-.ico-size {
+.size-14 {
   width: 14px;
   height: 14px;
 }
 
 //spaces
 .section-pt {
+padding-top: 60px;
 
-  @include media-desctop {
+  @include media-laptop {
     padding-top: 117px;
   }
 }
 
 .section-pb {
+  padding-bottom: 60px;
 
-  @include media-desctop {
+  @include media-laptop {
     padding-bottom: 149px;
   }
 }
 
-//hovers
+//hovers&pseudo
 .hover {
   &:hover {
     background-color: $background;
@@ -100,8 +99,12 @@ img {
   }
 }
 
-.navbar-nav > .active > a {
-  color: $accent 
+.heading-pseudo {
+  &::before,  &::after{
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: $accent;
+  }
 }
-
 
