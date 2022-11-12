@@ -117,12 +117,41 @@ img {
   background-color: #fff7f4;
 }
 
+.bg-accent {
+  background-color: #ff5300;
+}
+
+.color-accent {
+  color: #ff5300;
+}
+
+.color-light {
+  color: #fff;
+}
+
+.color-main {
+  color: #373737;
+}
+
+.color-text {
+  color: #7b7b7b;
+}
+
 .fs-small {
   font-size: 10px;
 }
 
 .fs-large {
-  font-size: 48px;
+  font-size: 26px;
+}
+@media (min-width: 1400px) {
+  .fs-large {
+    font-size: 48px;
+  }
+}
+
+.ff-secondary {
+  font-family: "Work Sans";
 }
 
 .ico-size {
@@ -130,20 +159,16 @@ img {
   height: 14px;
 }
 
-.section-pt {
-  padding-top: 117px;
+@media (min-width: 1400px) {
+  .section-pt {
+    padding-top: 117px;
+  }
 }
 
-.section-pb {
-  padding-bottom: 149px;
-}
-
-.bg-accent {
-  background-color: #ff5300;
-}
-
-.color-light {
-  color: #fff;
+@media (min-width: 1400px) {
+  .section-pb {
+    padding-bottom: 149px;
+  }
 }
 
 .hover:hover {

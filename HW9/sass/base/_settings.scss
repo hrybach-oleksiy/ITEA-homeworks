@@ -27,39 +27,72 @@ img {
   // }
 }
 
+
+//backgrounds
 .bg-main {
   background-color: $background;
-}
-
-.fs-small {
-  font-size: 10px;
-} 
-
-.fs-large {
-  font-size: 48px;
-}
-
-.ico-size {
-  width: 14px;
-  height: 14px;
-}
-
-.section-pt {
-  padding-top: 117px;
-}
-
-.section-pb {
-  padding-bottom: 149px;
 }
 
 .bg-accent {
   background-color: $accent;
 }
 
+//colors
+
+.color-accent {
+  color: $accent;
+}
 .color-light {
   color: $light;
 }
 
+.color-main {
+  color: $dark-grey;
+}
+
+.color-text {
+  color: $parahraph-gray;
+}
+
+//fonts
+.fs-small {
+  font-size: 10px;
+} 
+
+.fs-large {
+  font-size: 26px;
+  
+  @include media-desctop{
+    font-size: 48px;
+  }
+}
+
+.ff-secondary {
+  font-family: "Work Sans";
+}
+
+//sizes
+.ico-size {
+  width: 14px;
+  height: 14px;
+}
+
+//spaces
+.section-pt {
+
+  @include media-desctop {
+    padding-top: 117px;
+  }
+}
+
+.section-pb {
+
+  @include media-desctop {
+    padding-bottom: 149px;
+  }
+}
+
+//hovers
 .hover {
   &:hover {
     background-color: $background;
@@ -68,7 +101,7 @@ img {
 }
 
 .navbar-nav > .active > a {
-  color: $accent;
+  color: $accent 
 }
 
 
