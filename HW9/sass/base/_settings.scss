@@ -15,6 +15,7 @@ html {
 body {
   font-family: "Poppins";
   font-weight: 500;
+  color: $dark-grey;
 }
 
 img {
@@ -34,6 +35,10 @@ img {
   font-size: 10px;
 } 
 
+.fs-large {
+  font-size: 48px;
+}
+
 .ico-size {
   width: 14px;
   height: 14px;
@@ -46,3 +51,24 @@ img {
 .section-pb {
   padding-bottom: 149px;
 }
+
+.bg-accent {
+  background-color: $accent;
+}
+
+.color-light {
+  color: $light;
+}
+
+.hover {
+  &:hover {
+    background-color: $background;
+    border-color: $dark-grey;
+  }
+}
+
+.navbar-nav > .active > a {
+  color: $accent;
+}
+
+
