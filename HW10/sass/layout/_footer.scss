@@ -1,4 +1,11 @@
-.footer {}
+.footer {
+    padding-top: 115px;
+    background-color: $background;
+
+    @include media-small-mobile {
+        padding: 30px 0;
+    }
+}
 
 .footer__container {
     display: grid;
@@ -6,14 +13,26 @@
     grid-template-rows: 100px repeat(2, 1fr);
     justify-items: center;
     row-gap: 55px;
+
+    @include media-small-mobile {
+        grid-template-rows: repeat(3, auto);
+        row-gap: 20px;
+    }
 }
 
 .footer__top {
-    width: 100%;
+    width: 80%;
     border-bottom: 1px solid black;
+
+    @include media-small-mobile {
+        width: 90%;
+        padding-bottom: 15px;
+    }
 }
 
-.menu.footer__menu {
+.copyright {
     display: grid;
-    grid-template-columns: minmax(1fr, 1000px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    font-size: 14px;
 }

@@ -12,3 +12,41 @@
   display: flex;
   gap: 31px;
 }
+
+.footer__menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  font-size: 14px;
+  font-weight: 700;
+
+  @include media-small-mobile {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 10px;
+  }
+
+  .menu__item {
+    &:first-child {
+      justify-self: end;
+
+      @include media-small-mobile {
+        justify-self: auto;
+      }
+    }
+
+    &:last-child {
+      justify-self: start;
+
+      @include media-small-mobile {
+        justify-self: auto;
+      }
+    }
+
+    &:nth-child(3) {
+      @include media-small-mobile {
+        order: -1;
+      }
+    }
+  }
+}
