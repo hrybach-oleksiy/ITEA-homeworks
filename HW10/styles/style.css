@@ -289,13 +289,20 @@ img {
   }
 }
 
-.footer {
+.footer__container {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 100px repeat(2, 1fr);
   justify-items: center;
   row-gap: 55px;
 }
-.footer__menu {
+
+.footer__top {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.menu.footer__menu {
   display: grid;
   grid-template-columns: minmax(1fr, 1000px);
 }
