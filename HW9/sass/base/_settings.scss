@@ -19,7 +19,7 @@ img {
 }
 
 button.active {
-  background-color: $accent!important;
+  background-color: $accent  !important;
 }
 
 //colors
@@ -40,7 +40,7 @@ button.active {
 }
 
 a.active {
-  color: $accent!important;
+  color: $accent  !important;
 }
 
 button.nav-link {
@@ -54,12 +54,12 @@ button.nav-link {
 //fonts
 .fs-small {
   font-size: 10px;
-} 
+}
 
 .fs-large {
   font-size: 26px;
-  
-  @include media-desctop{
+
+  @include media-desctop {
     font-size: 48px;
   }
 }
@@ -76,7 +76,7 @@ button.nav-link {
 
 //spaces
 .section-pt {
-padding-top: 60px;
+  padding-top: 60px;
 
   @include media-laptop {
     padding-top: 117px;
@@ -100,11 +100,12 @@ padding-top: 60px;
 }
 
 .heading-pseudo {
-  &::before,  &::after{
+
+  &::before,
+  &::after {
     content: "";
     width: 40px;
     height: 1px;
     background-color: $accent;
   }
 }
-
