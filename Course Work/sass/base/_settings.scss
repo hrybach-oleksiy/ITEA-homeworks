@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  font-family: "Inter";
+  color: $dark;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}

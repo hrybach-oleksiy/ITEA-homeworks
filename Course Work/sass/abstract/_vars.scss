@@ -1,0 +1,21 @@
+//colors
+$accent: #ffd050;
+$light: #fff;
+$dark: #232536;
+$paragraph-color: #6d6e76;
+$purple: #592ea9;
+// backgrounds
+$background-accent: #fbf6ea;
+$background-primary: #f4f0f8;
+$background-secondary: #f4f4f4;
+$background-dark: #4c4c4c;
+//media
+$desctop-width: 1400px;
+$laptop-width: 1200px;
+$tablet-width: 992px;
+$mobile-width: 768px;
+$small-mobile-width: 414px;
+//sizes
+$content-width: 1280px;
+$container-offset: 15px;
+$container-width: calc($content-width + ($container-offset * 2));
