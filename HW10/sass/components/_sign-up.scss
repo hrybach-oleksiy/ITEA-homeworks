@@ -1,0 +1,27 @@
+.sign-up {
+  padding: 81px 0 69px;
+  background-color: $accent;
+
+  @include media-small-mobile {
+    padding: 24px 0;
+  }
+}
+
+.sign-up__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.sign-up__title {
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.sign-up__subtitle {
+  @extend .sign-up__title;
+  font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.gifts {
+  padding-top: 96px;
+  padding-bottom: 137px;
+
+  @include media-mobile {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include media-small-mobile {
+    padding: 30px;
+  }
+}
+
+.gifts__cards {
+  gap: 30px;
+}
+
+.gifts__title {
+  margin-bottom: 23px;
+}
+
+.gifts__quotation {
+  margin-bottom: 64px;
+}

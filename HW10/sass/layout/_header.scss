@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 34px 40px;
+
+  @include media-desctop {
+    font-size: 26px;
+  }
+
+  @include media-mobile {
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.header__btn {
+  padding: 13px 20px;
+  line-height: 22px;
+
+  @include media-tablet {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  @include media-mobile {
+    padding: 6px;
+    font-size: 10px;
+    width: auto;
+  }
+}

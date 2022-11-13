@@ -1,0 +1,11 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 55px;
+
+    &__menu {
+        display: grid;
+        grid-template-columns: minmax(1fr, 1000px);
+    }
+}

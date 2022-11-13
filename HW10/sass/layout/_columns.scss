@@ -1,0 +1,39 @@
+.layout-2-columns {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    width: 50%;
+  }
+
+  @include media-tablet {
+    flex-direction: column;
+    gap: 20px;
+
+    > * {
+      width: 100%;
+    }
+  }
+}
+
+.layout-4-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  > * {
+    flex-basis: calc(25% - 30px);
+  }
+
+  @include media-tablet {
+    > * {
+      flex-basis: calc(50% - 30px);
+    }
+  }
+
+  @include media-mobile {
+    > * {
+      flex-basis: 100%;
+    }
+  }
+}
