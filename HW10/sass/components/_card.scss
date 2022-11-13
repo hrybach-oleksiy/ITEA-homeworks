@@ -6,6 +6,17 @@
   cursor: pointer;
   transition: all 0.3s ease-out;
 
+  picture {
+    @include media-small-mobile {
+      flex-basis: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &:hover {
     background-color: $light;
     box-shadow: 4px -3px 13px -4px $shadow;

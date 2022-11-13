@@ -486,6 +486,15 @@ img {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
+@media (max-width: 414px) {
+  .card picture {
+    flex-basis: 100%;
+  }
+}
+.card picture img {
+  width: 100%;
+  height: 100%;
+}
 .card:hover {
   background-color: #fff;
   box-shadow: 4px -3px 13px -4px #aa9e9e;

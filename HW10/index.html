@@ -42,14 +42,26 @@
                        class="btn btn--accent">Find gift now</a>
                 </div>
                 <div class="hero__image">
-                    <img src="./img/hero-img1.jpg"
-                         alt="Happy Couple">
+                    <picture>
+                        <source media="(min-width:1000px)"
+                                srcset="./img/hero-img1.jpg">
+                        <source media="(min-width:450px)"
+                                srcset="./img/hero-img1-tablet.jpg">
+                        <img src="./img/hero-img2-mobile.jpg"
+                             alt="Happy Couple">
+                    </picture>
                 </div>
             </div>
             <div class="layout-2-columns">
                 <div class="hero__image">
-                    <img src="./img/hero-img2.jpg"
-                         alt="Bussines Card">
+                    <picture>
+                        <source media="(min-width:1000px)"
+                                srcset="./img/hero-img2-tablet.jpg">
+                        <source media="(min-width:450px)"
+                                srcset="./img/hero-img2-mobile.jpg">
+                        <img src="./img/hero-img2.jpg"
+                             alt="Bussines Card">
+                    </picture>
                 </div>
                 <div class="hero__text">
                     <h2 class="title">How we work</h2>
@@ -69,9 +81,13 @@
                 <q class="quotation gifts__quotation">Try our web app to find the best gifts for all occasions</q>
                 <div class="layout-4-columns gifts__cards">
                     <article class="card">
-                        <img src="./img/card-1.jpg"
-                             alt="Gift Card Photo"
-                             class="card__img">
+                        <picture>
+                            <source media="(max-width:414px)"
+                                    srcset="./img/card-1-tablet.jpg">
+                            <img src="./img/card-1.jpg"
+                                 alt="Gift Card Photo"
+                                 class="card__img">
+                        </picture>
                         <div class="card__body">
                             <h3 class="card__title">Birthday</h3>
                             <a href="#"
@@ -79,9 +95,13 @@
                         </div>
                     </article>
                     <article class="card">
-                        <img src="./img/card-2.jpg"
-                             alt="Gift Card Photo"
-                             class="card__img">
+                        <picture>
+                            <source media="(max-width:414px)"
+                                    srcset="./img/card-2-tablet.jpg">
+                            <img src="./img/card-2.jpg"
+                                 alt="Gift Card Photo"
+                                 class="card__img">
+                        </picture>
                         <div class="card__body">
                             <h3 class="card__title">Anniversary</h3>
                             <a href="#"
@@ -89,9 +109,13 @@
                         </div>
                     </article>
                     <article class="card">
-                        <img src="./img/card-3.jpg"
-                             alt="Gift Card Photo"
-                             class="card__img">
+                        <picture>
+                            <source media="(max-width:414px)"
+                                    srcset="./img/card-3-tablet.jpg">
+                            <img src="./img/card-3.jpg"
+                                 alt="Gift Card Photo"
+                                 class="card__img">
+                        </picture>
                         <div class="card__body">
                             <h3 class="card__title">Valentine's Day</h3>
                             <a href="#"
@@ -99,9 +123,13 @@
                         </div>
                     </article>
                     <article class="card">
-                        <img src="./img/card-4.jpg"
-                             alt="Gift Card Photo"
-                             class="card__img">
+                        <picture>
+                            <source media="(max-width:414px)"
+                                    srcset="./img/card-4-tablet.jpg">
+                            <img src="./img/card-4.jpg"
+                                 alt="Gift Card Photo"
+                                 class="card__img">
+                        </picture>
                         <div class="card__body">
                             <h3 class="card__title">Christmas</h3>
                             <a href="#"
