@@ -1,0 +1,23 @@
+.post-data {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 12px;
+}
+
+.hero__post-data {
+    @include fluid-font(16, 14);
+
+    div > span {
+        color: $accent;
+    }
+
+    @include media-small-mobile {
+        justify-self: start;
+        grid-template-columns: 1fr;
+        gap: 3px;
+
+        div + span {
+            display: none;
+        }
+    }
+}

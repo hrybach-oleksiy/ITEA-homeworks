@@ -14,6 +14,14 @@
     &:hover {
         background-color: $accent;
     }
+
+    &--accent {
+        background-color: $accent;
+
+        &:hover {
+            background-color: $light;
+        }
+    }
 }
 
 .header__btn {

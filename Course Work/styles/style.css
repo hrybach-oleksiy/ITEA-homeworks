@@ -175,6 +175,12 @@ img {
 .btn:hover {
   background-color: #ffd050;
 }
+.btn--accent {
+  background-color: #ffd050;
+}
+.btn--accent:hover {
+  background-color: #fff;
+}
 
 @media (max-width: 768px) {
   .header__btn {
@@ -243,4 +249,116 @@ img {
   width: 80%;
   background-color: #232536;
   transition: 0.5s;
+}
+
+.hero {
+  padding: 8.9vw 15px 13vw;
+  background-image: url("../assets/img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: minmax(auto, 804px);
+  justify-items: start;
+}
+@media (max-width: 414px) {
+  .hero__container {
+    justify-items: center;
+  }
+}
+
+.hero__subtitle {
+  margin-bottom: 1.7vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 125%;
+}
+@media (max-width: 768px) {
+  .hero__subtitle {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 768px) {
+  .hero__subtitle {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.hero__subtitlespan {
+  font-weight: 500;
+}
+
+.hero__title {
+  margin-bottom: 1.7vw;
+  font-family: "Sen";
+  font-weight: 700;
+  line-height: 114%;
+  letter-spacing: -2px;
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: calc(28px + 47.6 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: calc(28px + 28 * (100vw / 1440));
+  }
+}
+@media (max-width: 414px) {
+  .hero__title {
+    text-align: center;
+  }
+}
+
+.hero__desc {
+  margin: 16px 0 48px;
+}
+@media (max-width: 768px) {
+  .hero__desc {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 768px) {
+  .hero__desc {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+@media (max-width: 414px) {
+  .hero__desc {
+    text-align: center;
+  }
+}
+
+.post-data {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .hero__post-data {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 768px) {
+  .hero__post-data {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+.hero__post-data div > span {
+  color: #ffd050;
+}
+@media (max-width: 414px) {
+  .hero__post-data {
+    justify-self: start;
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+  .hero__post-data div + span {
+    display: none;
+  }
 }
