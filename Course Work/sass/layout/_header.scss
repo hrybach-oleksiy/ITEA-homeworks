@@ -1,0 +1,16 @@
+.header {
+    padding: 12px 15px;
+    width: 100%;
+    background-color: $dark;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 32px;
+
+    @include media-mobile {
+        grid-template-columns: 1fr 1fr;
+    }
+}

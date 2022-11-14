@@ -7,4 +7,9 @@
 @import "./base/settings";
 //Layout
 @import "./layout/container";
+@import "./layout/header";
 //Components
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/buttons";
+@import "./components/burger-menu";

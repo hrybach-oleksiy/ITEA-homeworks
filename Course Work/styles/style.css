@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ===== Usage ===== */
+@font-face {
+  font-family: "Sen";
+  src: url("../assets/fonts/Sen-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Black.woff2") format("woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("../assets/fonts/Sen-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  font-family: "Inter";
+  color: #232536;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 12px 15px;
+  width: 100%;
+  background-color: #232536;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+}
+@media (max-width: 768px) {
+  .header__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.nav {
+  justify-self: end;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 24px;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__link {
+  transition: color 0.3s ease-in-out;
+}
+.menu__link:hover {
+  color: #ffd050;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 48px;
+  color: #232536;
+  background-color: #fff;
+  font-family: "Sen";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #ffd050;
+}
+
+@media (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.burger-menu {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+}
+.burger-menu__list {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+.burger-menu__link {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.burger-menu__btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ffd050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  z-index: 2;
+}
+.burger-menu__btn--active span {
+  position: absolute;
+}
+.burger-menu__btn--active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.burger-menu__btn--active span:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu__btn--active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.burger-menu__btn--active + .burger-menu__list {
+  transform: translateY(0);
+}
+.burger-menu__btn span {
+  height: 2px;
+  width: 80%;
+  background-color: #232536;
+  transition: 0.5s;
+}

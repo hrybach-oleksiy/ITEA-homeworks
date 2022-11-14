@@ -16,6 +16,7 @@ $tablet-width: 992px;
 $mobile-width: 768px;
 $small-mobile-width: 414px;
 //sizes
+$page-width: 1440; //for adaptive font mixin need specify without px
 $content-width: 1280px;
 $container-offset: 15px;
 $container-width: calc($content-width + ($container-offset * 2));

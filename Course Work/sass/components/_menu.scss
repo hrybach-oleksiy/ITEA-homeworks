@@ -1,0 +1,22 @@
+.nav {
+    justify-self: end;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 24px;
+    color: $light;
+
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.menu__link {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $accent;
+    }
+}
