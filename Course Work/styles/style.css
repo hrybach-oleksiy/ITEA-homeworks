@@ -253,7 +253,7 @@ img {
 
 .hero {
   padding: 8.9vw 15px 13vw;
-  background-image: url("../assets/img/hero-bg.jpg");
+  background-image: radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
