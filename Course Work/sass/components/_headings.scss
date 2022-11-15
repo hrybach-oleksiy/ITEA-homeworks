@@ -1,0 +1,13 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Sen";
+    font-weight: 700;
+}
+
+.title {
+    @include fluid-font(36, 24);
+    // line-height: 133%;
+    letter-spacing: -2px;
+}

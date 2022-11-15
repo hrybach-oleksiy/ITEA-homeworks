@@ -1,0 +1,13 @@
+.blog {
+    padding: 8.9vw 15px;
+}
+
+.blog__container {
+    display: grid;
+    grid-template-columns: minmax(auto, 733px) 1fr;
+    gap: 32px;
+
+    @include media-laptop {
+        grid-template-columns: 1fr;
+    }
+}

@@ -21,3 +21,11 @@
         }
     }
 }
+
+.post-data--small {
+    @include fluid-font(14, 12);
+
+    div > span {
+        color: $purple;
+    }
+}
