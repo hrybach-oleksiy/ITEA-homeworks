@@ -42,7 +42,7 @@
 
 .hero__desc {
     margin: 16px 0 48px;
-    @include fluid-font(16, 14);
+    color: $light;
 
     @include media-small-mobile {
         text-align: center;

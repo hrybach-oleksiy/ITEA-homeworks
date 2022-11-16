@@ -1,3 +1,8 @@
+.post {
+    display: grid;
+    gap: 15px;
+}
+
 .post__title {
     margin-bottom: 32px;
 }
@@ -10,24 +15,18 @@
 }
 
 .post__img {
+    display: grid;
+    justify-items: stretch;
+    width: 100%;
     margin-bottom: 32px;
 }
 
 .post__descr {
     max-width: 551px;
-    @extend .post__img;
-    @include fluid-font(16, 14);
-    color: $paragraph-color;
-    line-height: 175%;
+    margin-bottom: 32px;
 }
 
 .post__post-data,
 .post__subtitle {
     margin-bottom: 16px;
-}
-
-.post__subtitle {
-    @include fluid-font(28, 22);
-    line-height: 143%;
-    letter-spacing: -1px;
 }

@@ -1,0 +1,5 @@
+.description {
+    @include fluid-font(16, 14);
+    color: $paragraph-color;
+    line-height: 175%;
+}

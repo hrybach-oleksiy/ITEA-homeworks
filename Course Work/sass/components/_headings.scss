@@ -11,3 +11,17 @@ h4 {
     // line-height: 133%;
     letter-spacing: -2px;
 }
+
+.title-3 {
+    @include fluid-font(28, 22);
+    line-height: 143%;
+    letter-spacing: -1px;
+}
+
+.title-5 {
+    @include fluid-font(16, 14);
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

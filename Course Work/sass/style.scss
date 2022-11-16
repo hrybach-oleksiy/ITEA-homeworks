@@ -9,13 +9,16 @@
 @import "./layout/container";
 @import "./layout/header";
 //Components
+@import "./components/buttons";
+@import "./components/headings";
+@import "./components/description";
+@import "./components/burger-menu";
+/////
 @import "./components/logo";
 @import "./components/menu";
-@import "./components/buttons";
-@import "./components/burger-menu";
 @import "./components/hero";
 @import "./components/post-data";
 @import "./components/blog";
-@import "./components/headings";
 @import "./components/post";
 @import "./components/blog-posts";
+@import "./components/about";
