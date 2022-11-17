@@ -1,0 +1,24 @@
+.category-card {
+    padding: 32px;
+    border: 1px solid rgba(109, 110, 118, 0.3);
+
+    &--active {
+        border: 1px solid transparent;
+        background-color: $accent;
+    }
+}
+
+.category-card__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    background-color: $background-accent;
+
+    &--active {
+        background-color: $light;
+    }
+}

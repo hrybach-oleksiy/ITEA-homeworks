@@ -1,0 +1,23 @@
+.category {
+    padding: 4.4vw 15px;
+}
+
+.category__title {
+    margin-bottom: 3.3vw;
+    text-align: center;
+}
+
+.category__categories {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 296px));
+    justify-content: center;
+    gap: 2.2vw;
+
+    @include media-tablet {
+        grid-template-columns: repeat(2, minmax(200px, 296px));
+    }
+
+    @include media-mobile {
+        grid-template-columns: 1fr
+    }
+}
