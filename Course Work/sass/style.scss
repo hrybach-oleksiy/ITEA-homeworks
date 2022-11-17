@@ -8,6 +8,7 @@
 //Layout
 @import "./layout/container";
 @import "./layout/header";
+@import "./layout/layout-grid";
 //Components
 @import "./components/buttons";
 @import "./components/headings";
@@ -25,3 +26,4 @@
 @import "./components/category";
 @import "./components/category-card";
 @import "./components/story";
+@import "./components/authors";
