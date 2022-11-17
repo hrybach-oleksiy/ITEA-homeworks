@@ -1,0 +1,40 @@
+.story {
+    padding: 4.4vw 15px;
+}
+
+.story__container {
+    display: grid;
+    grid-template-columns: [image-start] minmax(auto, 574px) [text-start] minmax(auto, 375px)[image-end] minmax(auto, 328px) [text-end];
+    grid-template-rows: [image-start] 121px [text-start] 584px [row-end];
+}
+
+.story__image {
+    grid-column: image-start / image-end;
+    grid-row: image-start / row-end;
+    background-image: url("../assets/img/story-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.story__text {
+    display: grid;
+    justify-items: start;
+    grid-column: text-start / text-end;
+    grid-row: text-start / row-end;
+    padding: 5.6vw;
+    background-color: $light;
+}
+
+.story__subtitle {
+    margin-bottom: 1.7vw;
+}
+
+.story__title {
+    @include fluid-font(48, 36);
+    margin-bottom: 16px;
+}
+
+.story__descr {
+    margin-bottom: 2.2vw;
+}
