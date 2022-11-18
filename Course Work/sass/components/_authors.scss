@@ -1,12 +1,40 @@
-#facebook-icon {
-    fill: orange;
+.authors {
+    padding: 4.4vw 15px 3.4vw;
 }
 
-#facebook-icon:hover {
-    fill: crimson;
+.authors__title {
+    margin-bottom: 3.3vw;
+    text-align: center;
 }
 
-path {
-    fill: inherit;
-    stroke: inherit;
+.author {
+    display: grid;
+    justify-items: center;
+    padding: 40px 0;
+    background-color: $background-secondary;
+
+    &--active {
+        background-color: $background-accent;
+    }
+}
+
+.author__avatar,
+.author__descr {
+    margin-bottom: 20px;
+}
+
+.author__socials {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 16px;
+}
+
+.author__link {
+    svg path {
+        transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover svg path {
+        fill: $accent;
+    }
 }
