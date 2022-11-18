@@ -933,3 +933,24 @@ h4 {
   height: 64px;
   background-color: #232536;
 }
+
+.join {
+  padding: 4.4vw 15px 8.9vw;
+}
+
+.join__container {
+  display: grid;
+  grid-template-columns: minmax(320px, 414px);
+  justify-content: center;
+  justify-items: center;
+}
+
+.join__title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.join__descr {
+  margin-bottom: 32px;
+  text-align: center;
+}
