@@ -783,3 +783,20 @@ h4 {
 .author__link:hover svg path {
   fill: #ffd050;
 }
+
+.featured {
+  padding: 3.7vw 15px;
+}
+
+.featured__container {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 86px;
+}
+
+.featured__partners {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-content: center;
+  gap: 75px;
+}
