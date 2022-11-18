@@ -1,0 +1,15 @@
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 16px;
+}
+
+.socials__link {
+    svg path {
+        transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover svg path {
+        fill: $accent;
+    }
+}

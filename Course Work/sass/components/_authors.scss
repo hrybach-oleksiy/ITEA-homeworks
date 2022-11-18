@@ -22,19 +22,3 @@
 .author__descr {
     margin-bottom: 20px;
 }
-
-.author__socials {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 16px;
-}
-
-.author__link {
-    svg path {
-        transition: fill 0.3s ease-in-out;
-    }
-
-    &:hover svg path {
-        fill: $accent;
-    }
-}

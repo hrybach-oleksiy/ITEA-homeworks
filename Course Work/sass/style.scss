@@ -9,14 +9,13 @@
 @import "./layout/container";
 @import "./layout/header";
 @import "./layout/layout-grid";
+@import "./layout/footer";
 //Components
 @import "./components/buttons";
 @import "./components/headings";
 @import "./components/description";
 @import "./components/burger-menu";
 /////
-@import "./components/logo";
-@import "./components/menu";
 @import "./components/hero";
 @import "./components/post-data";
 @import "./components/blog";
@@ -27,6 +26,7 @@
 @import "./components/category-card";
 @import "./components/story";
 @import "./components/authors";
+@import "./components/socials";
 @import "./components/featured";
 @import "./components/testimonials";
 @import "./components/join";
