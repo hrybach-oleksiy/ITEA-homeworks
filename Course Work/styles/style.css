@@ -791,12 +791,37 @@ h4 {
 .featured__container {
   display: grid;
   grid-template-columns: max-content auto;
+  align-items: end;
   gap: 86px;
+}
+@media (max-width: 1200px) {
+  .featured__container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 414px) {
+  .featured__container {
+    justify-items: center;
+  }
 }
 
 .featured__partners {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   align-content: center;
-  gap: 75px;
+  gap: 5.2vw;
+}
+
+.featured__title {
+  color: #6d6e76;
+}
+
+.featured__title-wrapper {
+  display: grid;
+}
+@media (max-width: 1200px) {
+  .featured__title-wrapper {
+    justify-items: center;
+  }
 }
