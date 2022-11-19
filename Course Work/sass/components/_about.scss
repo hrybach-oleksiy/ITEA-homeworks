@@ -1,5 +1,5 @@
 .about {
-    padding: 4vw 0 8.9vw;
+    padding: 4vw 0 8.2vw;
 }
 
 .about__container {
@@ -33,8 +33,8 @@
 .about__wrapper {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    grid-template-columns: minmax(auto, 486px) minmax(auto, 512px);
+    gap: 6.2vw;
     padding: 6.7vw 5.6vw;
     background-color: $background-primary;
 
@@ -43,12 +43,13 @@
     }
 }
 
-// .about__about-us, .about__mission {
-//     padding-right: 52px;
-// }
-.about__title,
-.about__descr {
+.about__title {
+    max-width: 485px;
     margin-bottom: 16px;
+}
+
+.about__descr {
+    margin-bottom: 21px;
 }
 
 .about__subtitle {

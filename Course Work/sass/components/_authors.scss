@@ -1,9 +1,9 @@
 .authors {
-    padding: 1.4vw 15px 3.4vw;
+    padding: 0.8vw 15px 3.4vw;
 }
 
 .authors__title {
-    margin-bottom: 3.7vw;
+    margin-bottom: 3.4vw;
     text-align: center;
 }
 
@@ -21,4 +21,8 @@
 .author__avatar,
 .author__descr {
     margin-bottom: 17px;
+}
+
+.author__descr {
+    font-size: 14px;
 }

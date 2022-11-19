@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     @include media-laptop {
         margin-bottom: 15px;
@@ -38,8 +38,8 @@
 .short-post__link {
     display: grid;
     justify-items: start;
-    gap: 8px;
-    padding: 2.2vw;
+    gap: 11px;
+    padding: 2.2vw 2.2vw 1.9vw;
     border: 1px solid transparent;
     transition: all 0.3s ease-in-out;
 

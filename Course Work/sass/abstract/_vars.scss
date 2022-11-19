@@ -13,13 +13,13 @@ $background-primary: #f4f0f8;
 $background-secondary: #f4f4f4;
 $background-dark: #4c4c4c;
 //media
-$desctop-width: 1400px;
+$desctop-width: 1441px;
 $laptop-width: 1200px;
 $tablet-width: 992px;
 $mobile-width: 768px;
 $small-mobile-width: 414px;
 //sizes
 $page-width: 1440; //for adaptive font mixin need specify without px
-$content-width: 1280px;
+$content-width: 1250px;
 $container-offset: 15px;
 $container-width: calc($content-width + ($container-offset * 2));

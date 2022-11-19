@@ -25,6 +25,10 @@
     }
 }
 
+.testimonials__testimonial {
+    padding-top: 11px;
+}
+
 .testimonials__subtitle {
     margin-bottom: 12px;
 }
@@ -46,6 +50,7 @@
     }
 
     @include media-mobile {
+        max-width: none;
         text-align: center;
     }
 }
@@ -91,6 +96,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 5px;
 }
 
 .arrow {

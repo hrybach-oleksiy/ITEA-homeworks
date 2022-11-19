@@ -4,8 +4,8 @@
 
 .story__container {
     display: grid;
-    grid-template-columns: [image-start] minmax(auto, 574px) [text-start] minmax(auto, 375px)[image-end] minmax(auto, 328px) [text-end];
-    grid-template-rows: [image-start] 121px [text-start] 584px [row-end];
+    grid-template-columns: [image-start] minmax(auto, 574px) [text-start] minmax(auto, 375px) [image-end] minmax(auto, 328px) [text-end];
+    grid-template-rows: [image-start] 121px [text-start] minmax(584px, auto) [row-end];
 
     @include media-tablet {
         grid-template-columns: 1fr 1fr;
@@ -45,8 +45,7 @@
     justify-items: start;
     grid-column: text-start / text-end;
     grid-row: text-start / row-end;
-    padding: 5.6vw;
-    // padding-right: 4.5vw;
+    padding: 5.6vw 5.4vw 5.6vw 5.6vw;
     background-color: $light;
 
     @include media-tablet {

@@ -1,11 +1,12 @@
 .featured {
-    padding: 2.8vw 15px;
+    padding: 3vw 15px;
 }
 
 .featured__container {
     display: grid;
     grid-template-columns: max-content auto;
     gap: 86px;
+    padding: 0 14px;
 
     @include media-laptop {
         grid-template-columns: 1fr;
