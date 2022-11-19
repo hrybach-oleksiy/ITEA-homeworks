@@ -15,15 +15,13 @@
 }
 
 .post__img {
-    display: grid;
-    justify-items: stretch;
-    width: 100%;
+    justify-self: center;
     margin-bottom: 32px;
 }
 
 .post__descr {
     max-width: 551px;
-    margin-bottom: 32px;
+    margin-bottom: 2.2vw;
 }
 
 .post__post-data,

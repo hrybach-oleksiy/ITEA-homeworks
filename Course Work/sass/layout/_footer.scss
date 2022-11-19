@@ -85,6 +85,22 @@
     &:focus {
         border: 1px solid $light;
     }
+
+    &:invalid:not(:placeholder-shown) {
+        border-color: $error;
+        color: $error;
+
+        & + button {
+            background: $background-dark;
+            border: 1px solid $error;
+            color: $error;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.footer__btn {
+    align-self: stretch;
 }
 
 .footer__bottom {
@@ -127,6 +143,15 @@
 
 .address__tel {
     grid-area: tel;
+}
+
+.address__email,
+.address__tel {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $accent;
+    }
 }
 
 .footer__link {

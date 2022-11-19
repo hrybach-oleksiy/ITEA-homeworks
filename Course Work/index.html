@@ -80,8 +80,14 @@
                                     <h2 class="title-2 post_title">Featured Post</h2>
                                     <div class="post__body">
                                           <div class="post__img">
-                                                <img src="./assets/img/post-img.jpg"
-                                                     alt="Pink Building">
+                                                <picture>
+                                                      <source media="(min-width:1200px)"
+                                                              srcset="./assets/img/post-img.jpg">
+                                                      <source media="(min-width:768px)"
+                                                              srcset="./assets/img/post-img-tablet.jpg">
+                                                      <img src="./assets/img/post-img-mobile.jpg"
+                                                           alt="Pink Building">
+                                                </picture>
                                           </div>
                                           <div class="post-data post-data--small">
                                                 <div>By <span>John Doe</span></div>
@@ -96,7 +102,6 @@
                                                 occaecat cupidatat non proident.</p>
                                           <a class="btn btn--accent"
                                              href="#">Read More ></a>
-
                                     </div>
                               </div>
                         </article>
@@ -278,8 +283,6 @@
                   <div class="container">
                         <h2 class="title-2 authors__title">List of Authors</h2>
                         <div class="layout-grid">
-                              <!-- TO DO 
-                              add hover to author cards -->
                               <article class="author">
                                     <img src="./assets/img/author-avatar1.png"
                                          alt="Author Avatar"
@@ -306,7 +309,6 @@
                                                             </clipPath>
                                                       </defs>
                                                 </svg>
-
                                           </a>
                                           <a class="socials__link"
                                              href="#">
@@ -391,7 +393,6 @@
                                                             </clipPath>
                                                       </defs>
                                                 </svg>
-
                                           </a>
                                           <a class="socials__link"
                                              href="#">
@@ -476,7 +477,6 @@
                                                             </clipPath>
                                                       </defs>
                                                 </svg>
-
                                           </a>
                                           <a class="socials__link"
                                              href="#">
@@ -561,7 +561,6 @@
                                                             </clipPath>
                                                       </defs>
                                                 </svg>
-
                                           </a>
                                           <a class="socials__link"
                                              href="#">
@@ -699,7 +698,8 @@
                   </div>
             </section>
       </main>
-      <footer class="footer">
+      <footer class="footer"
+              id="contact">
             <div class="container">
                   <div class="footer__top">
                         <div class="logo">
@@ -729,14 +729,14 @@
                               <input class="footer__input"
                                      type="email"
                                      placeholder="Enter Your Email">
-                              <button class="btn btn--accent"
+                              <button class="btn btn--accent footer__btn"
                                       type="submit">Subscribe</button>
                         </form>
                   </div>
                   <div class="footer__bottom">
                         <address class="address">
                               <span class="address__street">Finstreet 118 2561 Fintown</span>
-                              <a clas="address__email"
+                              <a class="address__email"
                                  href="mailto:hello@finsweet.com">Hello@finsweet.com</a>
                               <a class="address__tel"
                                  href="tel:02079932905">020 7993 2905</a>
@@ -761,7 +761,6 @@
                                                 </clipPath>
                                           </defs>
                                     </svg>
-
                               </a>
                               <a class="socials__link footer__link"
                                  href="#">

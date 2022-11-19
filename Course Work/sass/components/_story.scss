@@ -30,6 +30,14 @@
         grid-column: auto / auto;
         grid-row: auto / auto;
     }
+
+    @include media-mobile {
+        background-image: url("../assets/img/story-bg-tablet.jpg");
+    }
+
+    @include media-small-mobile {
+        background-image: url("../assets/img/story-bg-mobile.jpg");
+    }
 }
 
 .story__text {

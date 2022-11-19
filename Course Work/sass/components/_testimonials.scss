@@ -101,6 +101,11 @@
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $accent;
+    }
 
     &--left {
         width: 48px;
