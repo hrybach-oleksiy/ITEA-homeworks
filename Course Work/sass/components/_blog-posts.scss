@@ -12,6 +12,11 @@
     justify-self: end;
     color: $purple;
     @include fluid-font(16, 14);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $accent;
+    }
 }
 
 .blog-posts__post-wrapper {
@@ -24,16 +29,24 @@
 
     @include media-mobile {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 
-.short-post {
+.short-post__link {
     display: grid;
     justify-items: start;
     gap: 8px;
-    padding: 32px;
+    padding: 2.2vw;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
 
-    &:nth-child(2) {
+    &:hover {
+        border: 1px solid rgba($color: $paragraph-color, $alpha: 0.3);
+        box-shadow: 3px 2px 15px -1px rgba(109, 110, 118, 0.73);
+    }
+
+    &--active {
         background-color: $background-accent;
     }
 }

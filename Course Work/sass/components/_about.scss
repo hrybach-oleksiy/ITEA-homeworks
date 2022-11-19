@@ -1,5 +1,5 @@
 .about {
-    padding: 4.4vw 15px 8.9vw;
+    padding: 4.4vw 0 8.9vw;
 }
 
 .about__container {
@@ -28,10 +28,6 @@
     @include media-laptop {
         grid-template-columns: 1fr 1fr;
     }
-
-    // @include media-mobile {
-    //     grid-template-columns: 1fr;
-    // }
 }
 
 .about__wrapper {
@@ -61,4 +57,9 @@
     @include fluid-font(18, 16);
     font-family: "Sen";
     font-weight: 700;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $accent;
+    }
 }

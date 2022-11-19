@@ -23,6 +23,10 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     align-content: center;
     gap: 5.2vw;
+
+    @include media-small-mobile {
+        justify-self: start;
+    }
 }
 
 .featured__title {

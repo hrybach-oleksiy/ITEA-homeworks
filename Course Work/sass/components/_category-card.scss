@@ -1,6 +1,12 @@
 .category-card {
     padding: 32px;
     border: 1px solid rgba(109, 110, 118, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 3px 2px 15px -1px rgba(109, 110, 118, 0.73);
+    }
 
     &--active {
         border: 1px solid transparent;

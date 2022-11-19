@@ -4,12 +4,16 @@
 
 .testimonials__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 6.4vw 7.8vw 5.2vw;
     background-color: $background-accent;
 
     @include media-tablet {
         gap: 50px;
+    }
+
+    @include media-small-mobile {
+        gap: 20px;
     }
 }
 
@@ -66,6 +70,11 @@
         "avatar place"
     ;
     column-gap: 16px;
+
+    @include media-small-mobile {
+        justify-self: start;
+        margin-top: 20px;
+    }
 }
 
 .review__avatar {
@@ -97,11 +106,31 @@
         width: 48px;
         height: 48px;
         background-color: $light;
+
+        @include media-mobile {
+            width: 38px;
+            height: 38px;
+        }
+
+        @include media-small-mobile {
+            width: 28px;
+            height: 28px;
+        }
     }
 
     &--right {
         width: 64px;
         height: 64px;
         background-color: $dark;
+
+        @include media-mobile {
+            width: 54px;
+            height: 54px;
+        }
+
+        @include media-small-mobile {
+            width: 44px;
+            height: 44px;
+        }
     }
 }
