@@ -1,5 +1,5 @@
 .footer {
-    padding: 4vw 15px;
+    padding: 4.3vw 15px;
     background-color: $dark;
 }
 
@@ -37,7 +37,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.4vw;
-    margin-bottom: 3.3vw;
+    margin-bottom: 3.7vw;
     padding: 5.5vw 4.4vw;
     background-color: rgba($color: $light, $alpha: 0.05);
 
@@ -158,4 +158,8 @@
     svg path {
         fill: $paragraph-color;
     }
+}
+
+.footer__socials {
+    gap: 26px;
 }

@@ -38,7 +38,7 @@
 }
 
 .hero__title {
-    margin-bottom: 1.7vw;
+    margin-bottom: 1.9vw;
 
     @include media-small-mobile {
         text-align: center;
@@ -46,7 +46,8 @@
 }
 
 .hero__desc {
-    margin: 16px 0 3.3vw;
+    max-width: 599px;
+    margin: 24px 0 3.3vw;
     color: $light;
 
     @include media-small-mobile {

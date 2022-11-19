@@ -1,6 +1,6 @@
 .post {
     display: grid;
-    gap: 15px;
+    gap: 28px;
 }
 
 .post__title {
@@ -16,7 +16,11 @@
 
 .post__img {
     justify-self: center;
-    margin-bottom: 32px;
+    margin-bottom: 37px;
+}
+
+.post__title {
+    margin: 18px 0;
 }
 
 .post__descr {

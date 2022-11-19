@@ -1,5 +1,5 @@
 .story {
-    padding: 4.4vw 0;
+    padding: 7.9vw 0;
 }
 
 .story__container {
@@ -46,6 +46,7 @@
     grid-column: text-start / text-end;
     grid-row: text-start / row-end;
     padding: 5.6vw;
+    // padding-right: 4.5vw;
     background-color: $light;
 
     @include media-tablet {
@@ -61,6 +62,7 @@
 .story__title {
     @include fluid-font(48, 36);
     margin-bottom: 16px;
+    line-height: 133%
 }
 
 .story__descr {

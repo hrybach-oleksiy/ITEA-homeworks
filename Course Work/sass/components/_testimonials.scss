@@ -1,11 +1,11 @@
 .testimonials {
-    padding: 3.3vw 0 4.4vw;
+    padding: 3.7vw 0 4.4vw;
 }
 
 .testimonials__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 6.4vw 7.8vw 5.2vw;
+    padding: 6.4vw 8.8vw 5.2vw;
     background-color: $background-accent;
 
     @include media-tablet {

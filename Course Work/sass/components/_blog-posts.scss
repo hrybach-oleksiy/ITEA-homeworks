@@ -8,7 +8,12 @@
     }
 }
 
+.blog-posts__title {
+    margin-bottom: 40px;
+}
+
 .blog-posts__link {
+    align-self: start;
     justify-self: end;
     color: $purple;
     @include fluid-font(16, 14);

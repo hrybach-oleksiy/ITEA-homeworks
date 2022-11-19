@@ -1,11 +1,10 @@
 .featured {
-    padding: 3.7vw 15px;
+    padding: 2.8vw 15px;
 }
 
 .featured__container {
     display: grid;
     grid-template-columns: max-content auto;
-    align-items: end;
     gap: 86px;
 
     @include media-laptop {
@@ -27,6 +26,11 @@
     @include media-small-mobile {
         justify-self: start;
     }
+}
+
+.featured__descr {
+    @include fluid-font(14, 12);
+    line-height: 143%;
 }
 
 .featured__title {
