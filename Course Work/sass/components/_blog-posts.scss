@@ -2,18 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
+    margin-bottom: 40px;
 
     @include media-laptop {
         margin-bottom: 15px;
     }
 }
 
-.blog-posts__title {
-    margin-bottom: 40px;
-}
-
 .blog-posts__link {
-    align-self: start;
+    align-self: center;
     justify-self: end;
     color: $purple;
     @include fluid-font(16, 14);

@@ -373,10 +373,6 @@ img {
   fill: #6d6e76;
 }
 
-.footer__socials {
-  gap: 26px;
-}
-
 .btn {
   display: flex;
   justify-content: center;
@@ -749,6 +745,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
+  margin-bottom: 40px;
 }
 @media (max-width: 1200px) {
   .blog-posts__title-wrapper {
@@ -756,12 +753,8 @@ h4 {
   }
 }
 
-.blog-posts__title {
-  margin-bottom: 40px;
-}
-
 .blog-posts__link {
-  align-self: start;
+  align-self: center;
   justify-self: end;
   color: #592ea9;
   transition: color 0.3s ease-in-out;
@@ -1048,6 +1041,10 @@ h4 {
   fill: #ffd050;
 }
 
+.footer__socials {
+  gap: 26px;
+}
+
 .featured {
   padding: 2.8vw 15px;
 }
@@ -1114,27 +1111,27 @@ h4 {
 
 .testimonials__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 6.4vw 8.8vw 5.2vw;
+  grid-template-columns: minmax(250px, 345px) 1px minmax(250px, 532px);
+  justify-content: center;
+  gap: 89px;
+  padding: 5.6vw 15px 5.2vw;
   background-color: #fbf6ea;
 }
 @media (max-width: 992px) {
   .testimonials__container {
-    gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1px auto;
+    gap: 30px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   .testimonials__container {
     gap: 20px;
   }
 }
-
-.testimonials__testimonial {
-  padding-right: 5.6vw;
-}
-@media (max-width: 992px) {
-  .testimonials__testimonial {
-    padding-right: 0;
+@media (max-width: 414px) {
+  .testimonials__container {
+    gap: 15px;
   }
 }
 
@@ -1146,23 +1143,22 @@ h4 {
   margin-bottom: 16px;
 }
 
-.review {
-  padding-left: 6.7vw;
-  border-left: 1px solid rgba(109, 110, 118, 0.4);
-}
-@media (max-width: 992px) {
-  .review {
-    padding-left: 0;
-    border-left: none;
-  }
+.testimonials__line {
+  background-color: rgba(109, 110, 118, 0.4);
 }
 
 .review__title {
+  max-width: 468px;
   margin-bottom: 8.4vw;
 }
 @media (max-width: 992px) {
   .review__title {
-    margin-bottom: 2vw;
+    margin-bottom: 6vw;
+  }
+}
+@media (max-width: 768px) {
+  .review__title {
+    text-align: center;
   }
 }
 
@@ -1186,7 +1182,6 @@ h4 {
 }
 @media (max-width: 414px) {
   .review__author-wraper {
-    justify-self: start;
     margin-top: 20px;
   }
 }
@@ -1256,7 +1251,7 @@ h4 {
 }
 
 .join {
-  padding: 5.6vw 15px 8.9vw;
+  padding: 4.2vw 15px 8.9vw;
 }
 
 .join__container {
