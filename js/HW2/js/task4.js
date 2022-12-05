@@ -6,7 +6,7 @@ let sum = 0;
 for (let i = a; i <= b; i++) {
     sum += i;
 
-    if (i % 2 === 0) {
+    if (i % 2 !== 0) {
         console.log(i);
     }
 }
