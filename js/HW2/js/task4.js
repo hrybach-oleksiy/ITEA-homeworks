@@ -1,6 +1,14 @@
-const userName = prompt('Enter your name');
-const userFamilyName = prompt('Enter your family name');
-const userAge = prompt('How old are you?');
-console.log('Your name is ' + userName)
-console.log('Your family name is ' + userFamilyName);
-console.log('Your age is ' + userAge);
+const a = 5;
+const b = 15;
+
+let sum = 0;
+
+for (let i = a; i <= b; i++) {
+    sum += i;
+
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+console.log(`Sum of numbers from ${a} to ${b} is ${sum}`);

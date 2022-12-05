@@ -1,8 +1,11 @@
-const x1 = prompt('Enter x1 coordinate');
-const x2 = prompt('Enter x2 coordinate');
-const y1 = prompt('Enter y1 coordinate');
-const y2 = prompt('Enter y2 coordinate');
-const k = (y1 - y2) / (x1 - x2);
-const b = y2 - k * x2;
-const result = `y = ${k}x + ${b}`;
-console.log(result);
+const userNumber1 = +prompt('Enter first number');
+const userNumber2 = +prompt('Enter second number');
+const userNumber3 = +prompt('Enter third number');
+
+if (userNumber1 === userNumber2 || userNumber1 === userNumber3 || userNumber2 === userNumber3) {
+    console.log('Error');
+} else {
+    const avg = (userNumber1 + userNumber2 + userNumber3) / 3;
+    console.log(avg);
+}
+
