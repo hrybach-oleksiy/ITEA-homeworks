@@ -7,15 +7,14 @@ const calculate = (a, b, sign) => {
     const correctSigns = ['+', '-', '*', '/'];
 
     if (isNaN(a) || isNaN(b)) {
-        return 'You entered not a number. Try again';
+        alert('You entered not a number. Try again');
+        return;
     };
 
-    correctSigns.forEach(elem => {
-        if (elem !== sign) {
-            return 'You entered wrong sign. Try again';
-        };
-    });
-
+    if (correctSigns.indexOf(sign) === -1) {
+        alert('You entered wrong sign. Try again');
+        return;
+    }
 
     switch (sign) {
         case '+':
@@ -33,12 +32,15 @@ const calculate = (a, b, sign) => {
 
 
 // Task 1 function call
-
 // const userNumber1 = +prompt('Enter your first number');
 // const userNumber2 = +prompt('Enter your second number');
 // const userSign = prompt('Enter sign', '+, -, *, /');
 // const result = calculate(userNumber1, userNumber2, userSign);
-// alert(result);
+
+// if (result) {
+//     alert(result);
+// }
+
 
 //===================================================================//
 
@@ -138,66 +140,75 @@ const reverseString = str => str.split('').reverse().join('');
 // 		Запитати користувача, чи хоче він повторити, якщо "так", запустити гру заново;
 
 
-let computerChoice = Math.floor(Math.random() * 3);
+const getTask6Result = () => {
+    const getComputerChoice = choice => {
+        if (choice === 0) return 'rock';
+        if (choice === 1) return 'paper';
+        if (choice === 2) return 'scissors';
+    };
 
-const getComputerChoice = choice => {
-    if (choice === 0) return 'rock';
-    if (choice === 1) return 'paper';
-    if (choice === 2) return 'scissors';
-};
+    const getUserChoice = () => {
+        return prompt('Enter "rock", "paper" or "scissors"');
+    };
 
-const getUserChoice = () => {
-    return prompt('Enter "rock", "paper" or "scissors"');
-};
+    let computerChoice = Math.floor(Math.random() * 3);
+    let comp = getComputerChoice(computerChoice);
+    let user = getUserChoice();
+    let isPlayAgain = false;
+    let compPoints = 0;
+    let userPoints = 0;
 
-let comp = getComputerChoice(computerChoice);
-let user = getUserChoice();
-let isPlayAgain = false;
-let compPoints = 0;
-let userPoints = 0;
+    const game = (comp, user) => {
+        const userChoice = user.toLowerCase();
+        const compChoice = comp.toLowerCase();
+        let winner = '';
 
-const game = (comp, user) => {
-    let winner = '';
+        if (userChoice !== 'scissors' && userChoice !== 'paper' && userChoice !== 'rock') {
+            alert('You made wrong choice. Try again!');
+            return;
+        }
 
-    switch (comp + user) {
-        case "rockscissors":
-        case "scissorspaper":
-        case "paperrock":
-            winner = 'Computer won';
-            compPoints++;
-            break;
-        case "scissorsrock":
-        case "paperscissors":
-        case "rockpaper":
-            winner = 'User won';
-            userPoints++;
-            break;
-        case "paperpaper":
-        case "scissorsscissors":
-        case "rockrock":
-            winner = 'tie';
-            break;
-    }
+        switch (compChoice + userChoice) {
+            case "rockscissors":
+            case "scissorspaper":
+            case "paperrock":
+                winner = 'Computer won';
+                compPoints++;
+                break;
+            case "scissorsrock":
+            case "paperscissors":
+            case "rockpaper":
+                winner = 'User won';
+                userPoints++;
+                break;
+            case "paperpaper":
+            case "scissorsscissors":
+            case "rockrock":
+                winner = 'tie';
+                break;
+        }
 
-    alert(winner);
-    alert(`Computer points:${compPoints}; User points: ${userPoints}`);
+        alert(winner);
+        alert(`Computer points:${compPoints}; User points: ${userPoints}`);
 
-    isPlayAgain = confirm('Would you play again');
+        isPlayAgain = confirm('Would you play again');
 
-    if (!isPlayAgain) {
-        alert(`Game over! Computer points:${compPoints}; User points: ${userPoints}`);
+        if (!isPlayAgain) {
+            alert(`Game over! Computer points:${compPoints}; User points: ${userPoints}`);
+        }
+    };
+
+    game(comp, user);
+
+    while (isPlayAgain) {
+        comp = getComputerChoice(Math.floor(Math.random() * 3));
+        user = getUserChoice();
+        game(comp, user);
     }
 };
 
 // Task 6 function call
-
-// game(comp, user);
-
-// while (isPlayAgain) {
-//     comp = getComputerChoice(Math.floor(Math.random() * 3));
-//     user = getUserChoice();
-//     game(comp, user);
-// }
+// getTask6Result();
 
 
 
