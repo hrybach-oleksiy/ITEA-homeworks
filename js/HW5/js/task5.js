@@ -5,66 +5,51 @@
 //      • "programmer" - 2000;
 //      • для решти значень – 1000.
 //    Після виконання функції – вивести інформацію про співробітників.
-           
-   // sort(function(a, b) { return a > b });
-   // 1, 2, 3, 5, 10, 14
-   // 1, 10, 14, 2, 3,
 
-const employees = [];
 
-let userName = prompt('Enter Name of employee');
-let userSurname = prompt('Enter Surname of employee');
-let userAge = prompt('Enter Age of employee');
-let userOccupation = prompt('Enter Occupation of employee');
-let count = 1;
-let isContinue = false;
-
-for (let i = 0; i < count; i++) {
-    const newEmployee = {
-        name: userName,
-        sName: userSurname,
-        age: userAge,
-        occupation: userOccupation,
-        show() {
-            alert(`\n Name: ${this.name} \n 
-                      Surname: ${this.sName} \n
-                      Age: ${this.age} \n 
-                      Occupation: ${this.occupation}
-            `);
-        }
-    };
-
-    employees.push(newEmployee);
-    employees[i].show();
-
-    isContinue = confirm('Would you like add another employee?');
-
-    if (isContinue) {
-        count++;
-        userName = prompt('Enter Name of employee');
-        userSurname = prompt('Enter Surname of employee');
-        age = prompt('Enter Age of employee');
-        userOccupation = prompt('Enter Occupation of employee');
+const employees = [
+    {
+        "name": "Alex",
+        "sName": "Smith",
+        "age": 36,
+        "occupation": "Manager"
+    },
+    {
+        "name": "Bob",
+        "sName": "Tornthon",
+        "age": 62,
+        "occupation": "director"
+    },
+    {
+        "name": "Jack",
+        "sName": "Grealish",
+        "age": 27,
+        "occupation": "programmer"
+    },
+    {
+        "name": "Pep",
+        "sName": "Guardiola",
+        "age": 53,
+        "occupation": "coach"
     }
-};
+];
 
-const addSalary = employees => { 
-    const employeesWithSalary = employees;
-    for (let i = 0; i < employeesWithSalary.length; i++) { 
-        switch (employeesWithSalary[i].occupation.toLowerCase()) { 
+const addSalary = employees => {
+    for (let i = 0; i < employees.length; i++) {
+        switch (employees[i].occupation.toLowerCase()) {
             case "director":
-                employeesWithSalary[i].salary = 3000;
+                employees[i].salary = 3000;
                 break;
             case "manager":
-                employeesWithSalary[i].salary = 1500;
+                employees[i].salary = 1500;
                 break;
             case "programmer":
-                employeesWithSalary[i].salary = 2000;
+                employees[i].salary = 2000;
                 break;
-            default: employeesWithSalary[i].salary = 1000;
+            default: employees[i].salary = 1000;
         }
     }
-    return employeesWithSalary;
+    return employees;
 };
 
 addSalary(employees);

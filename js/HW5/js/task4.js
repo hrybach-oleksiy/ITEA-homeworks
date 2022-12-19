@@ -5,7 +5,7 @@ const employees = [];
 
 let userName = prompt('Enter Name of employee');
 let userSurname = prompt('Enter Surname of employee');
-let userAge = prompt('Enter Age of employee');
+let userAge = +prompt('Enter Age of employee');
 let userOccupation = prompt('Enter Occupation of employee');
 let count = 1;
 let isContinue = false;
@@ -17,10 +17,12 @@ for (let i = 0; i < count; i++) {
         age: userAge,
         occupation: userOccupation,
         show() {
-            alert(`\n Name: ${this.name} \n 
-                      Surname: ${this.sName} \n
-                      Age: ${this.age} \n 
-                      Occupation: ${this.occupation}
+            alert(
+                `
+                Name: ${this.name} \n
+                 Surname: ${this.sName} \n
+                 Age: ${this.age} \n 
+                 Occupation: ${this.occupation}
             `);
         }
     };
@@ -34,7 +36,7 @@ for (let i = 0; i < count; i++) {
         count++;
         userName = prompt('Enter Name of employee');
         userSurname = prompt('Enter Surname of employee');
-        age = prompt('Enter Age of employee');
+        userAge = +prompt('Enter Age of employee');
         userOccupation = prompt('Enter Occupation of employee');
     }
 };
