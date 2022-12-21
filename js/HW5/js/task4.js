@@ -19,7 +19,7 @@ for (let i = 0; i < count; i++) {
         show() {
             alert(
                 `
-                Name: ${this.name} \n
+                 Name: ${this.name} \n
                  Surname: ${this.sName} \n
                  Age: ${this.age} \n 
                  Occupation: ${this.occupation}

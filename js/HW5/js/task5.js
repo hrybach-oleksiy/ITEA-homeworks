@@ -12,7 +12,7 @@ const employees = [
         "name": "Alex",
         "sName": "Smith",
         "age": 36,
-        "occupation": "Manager"
+        "occupation": "manager"
     },
     {
         "name": "Bob",
