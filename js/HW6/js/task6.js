@@ -115,12 +115,12 @@ const watchList = [
 // 6. Масив watchList містить об'єкти з інформацією про кілька фільмів. Використовуйте reduce, щоб знайти середній рейтинг IMDB фільмів, знятих режисером Крістофером Ноланом. Згадайте з попередніх завдань filter та map. Вам може знадобитися створити інші змінні, але збережіть остаточне середнє значення змінної AverageRating. Зверніть увагу, що значення рейтингу зберігаються у вигляді рядків в об'єкті і мають бути перетворені на числа, перш ніж вони будуть використані в будь-яких математичних операціях.
 
 const getAvarageRating = films => {
-    const avargeRating = films.filter(film => film.Director === 'Christopher Nolan')
+    const avaregeRating = films.filter(film => film.Director === 'Christopher Nolan')
         .reduce((acc, currValue, index, arr) => {
             return acc + Number(currValue.imdbRating) / arr.length;
         }, 0);
 
-    return avargeRating.toFixed(1);
+    return avaregeRating.toFixed(1);
 };
 
 console.log(getAvarageRating(watchList));
