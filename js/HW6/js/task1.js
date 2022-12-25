@@ -27,3 +27,4 @@ function addFriend(userObj, friend) {
     return friends;
 }
 console.log(addFriend(user, 'Pete'));
+
