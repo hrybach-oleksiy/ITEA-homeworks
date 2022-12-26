@@ -49,12 +49,15 @@ for (let i = 0; i < teamValues.length; i++) {
 
 //Task5
 team.showTeam = function () {
-    for (let e in this) {
-        this[e].tellAboutYourSelf();
-    }
+    const employees = Object.values(this);
+    employees.forEach(employee => {
+        if (typeof employee === 'object') {
+            console.log(`${employee.name} - ${employee.position}. Salary - ${employee.salary}$.`);
+        }
+    });
+
 };
 
 team.showTeam();
-
 
 
