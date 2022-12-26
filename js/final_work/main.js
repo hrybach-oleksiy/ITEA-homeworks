@@ -11,41 +11,53 @@ const employees =
         "Leonardo Bonucci",
         "Angel Di Maria"
     ];
-
-// for (let i = 0; i < positions.length; i++) {
-//     const newEmployee = prompt('Enter the name of new employee');
-//     employees.push(newEmployee);
-// }
-
-//Task2
 const team = {};
 
-for (let i = 0; i < employees.length; i++) {
-    team[i + 1] = { name: employees[i], position: positions[i] };
-}
+const getNames = () => {
+    for (let i = 0; i < positions.length; i++) {
+        const newEmployee = prompt('Enter the name of new employee');
+        employees.push(newEmployee);
+    }
+};
+
+//Task2
+const createTeam = () => {
+    for (let i = 0; i < employees.length; i++) {
+        team[i + 1] = { name: employees[i], position: positions[i] };
+    }
+};
 
 //Task3-Task4
-const teamValues = Object.values(team);
-const getSalary = (minSalary, maxSalary) => {
+const countSalary = (minSalary, maxSalary) => {
     return Math.floor(Math.random() * (maxSalary - minSalary) + minSalary);
 };
 
-for (let i = 0; i < teamValues.length; i++) {
-    const position = teamValues[i].position.toLowerCase();
-    if (position.indexOf('junior') === 0) {
-        teamValues[i].salary = getSalary(500, 1000);
-    } else if (position.indexOf('middle') === 0) {
-        teamValues[i].salary = getSalary(1500, 2000);
-    } else if (position.indexOf('senior') === 0) {
-        teamValues[i].salary = getSalary(2500, 3000);
-    } else {
-        teamValues[i].salary = getSalary(4000, 4500);
-    }
+const setSalary = () => {
+    const teamValues = Object.values(team);
 
-    teamValues[i].tellAboutYourSelf = function () {
-        console.log(`My name is ${this.name} and I am a ${this.position}. I have a salary ${this.salary}$.`);
-    };
-}
+    for (let i = 0; i < teamValues.length; i++) {
+        const position = teamValues[i].position.toLowerCase();
+
+        if (position.indexOf('junior') === 0) {
+            teamValues[i].salary = countSalary(500, 1000);
+        } else if (position.indexOf('middle') === 0) {
+            teamValues[i].salary = countSalary(1500, 2000);
+        } else if (position.indexOf('senior') === 0) {
+            teamValues[i].salary = countSalary(2500, 3000);
+        } else {
+            teamValues[i].salary = countSalary(4000, 4500);
+        }
+
+        teamValues[i].tellAboutYourSelf = function () {
+            console.log(`My name is ${this.name} and I am a ${this.position}. I have a salary ${this.salary}$.`);
+        };
+    }
+};
+
+// getNames();
+createTeam();
+setSalary();
+
 
 //Task5
 team.showTeam = function () {
@@ -55,7 +67,6 @@ team.showTeam = function () {
             console.log(`${employee.name} - ${employee.position}. Salary - ${employee.salary}$.`);
         }
     });
-
 };
 
 team.showTeam();
