@@ -181,27 +181,68 @@ const goods = [
 
 const productListElem = document.querySelector('.product-list');
 
-const createCard = item => {
-    return `
-    <article class="product-list__item tile" data-id="${item.id}">
-        <a href="${item.href}" class="tile__link">
-            <span class="tile__badge tile__badge--new">${item.badge}</span>
-            <span class="tile__image">
-                <img src="${item.images[0].preview}" alt="${item.title}">
-            </span>
-            <span class="tile__title">${item.title}</span>
-            <span class="tile__info">
-                <span class="tile__price">
-                    <span class="tile__old-price">${item.price.old} ₴</span>
-                    <span class="tile__new-price">${item.price.current} ₴</span>
-                </span>
-                <button class="btn">Купити</button>
-            </span>
-        </a>
-    </article>
-    `;
+const createCard = card => {
+    const article = document.createElement('article');
+    const articleLink = document.createElement('a');
+    const articleBadge = document.createElement('span');
+    const articleImageWrapper = document.createElement('span');
+    const articleImg = document.createElement('img');
+    const articleTitle = document.createElement('span');
+    const articleInfo = document.createElement('span');
+    const articlePrice = document.createElement('span');
+    const articleOldPrice = document.createElement('span');
+    const articleNewPrice = document.createElement('span');
+    const articleButton = document.createElement('button');
+
+    article.classList.add('product-list__item', 'tile');
+    article.setAttribute('data-id', card.id);
+
+    articleLink.classList.add('tile__link');
+    articleLink.href = card.href;
+
+    articleBadge.classList.add('tile__badge', `${card.badge === 'new' ? 'tile__badge--new' : 'tile__badge--sale'}`);
+    articleBadge.textContent = card.badge;
+
+    articleImageWrapper.classList.add('tile__image');
+
+    articleImg.src = card.images[0].preview;
+    articleImg.alt = card.title;
+
+    articleTitle.classList.add('tile__title');
+    articleTitle.textContent = card.title;
+
+    articleInfo.classList.add('tile__info');
+
+    articlePrice.classList.add('tile__price');
+
+    articleOldPrice.classList.add('tile__old-price');
+    articleOldPrice.textContent = card.price.old + ' ₴';
+
+    articleNewPrice.classList.add('tile__new-price');
+    articleNewPrice.textContent = card.price.current + ' ₴';
+
+    articleButton.classList.add('btn');
+    articleButton.textContent = 'Купити';
+
+    articlePrice.append(articleOldPrice);
+    articlePrice.append(articleNewPrice);
+
+    articleImageWrapper.append(articleImg);
+
+    articleInfo.append(articlePrice);
+    articleInfo.append(articleButton);
+
+    articleLink.append(articleBadge);
+    articleLink.append(articleImageWrapper);
+    articleLink.append(articleTitle);
+    articleLink.append(articleInfo);
+
+    article.append(articleLink);
+
+    return article;
+
 };
 
 goods.forEach(good => {
-    productListElem.insertAdjacentHTML('beforeend', createCard(good));
+    productListElem.append(createCard(good));
 });
