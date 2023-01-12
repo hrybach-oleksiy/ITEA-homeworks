@@ -50,9 +50,10 @@ select {
 }
 
 .tile {
+    display: flex;
     position: relative;
     width: 25%;
-    min-width: 249px;
+    min-width: 325px;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -64,7 +65,9 @@ select {
 }
 
 .tile__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding: 20px;
     text-decoration: none;
     color: navy;
@@ -103,6 +106,7 @@ select {
 }
 
 .tile__title {
+    flex-grow: 1;
     display: block;
     margin: 20px 0;
     font-weight: 600;
