@@ -1,21 +1,16 @@
 
 //Task 1
 const positions = ['Junior developer', 'Middle developer', 'Senior developer', 'Junior QA', 'Middle QA', 'Senior QA', 'Project manager'];
-const employees =
-    [
-        "John Smith",
-        "Bob Tornthon",
-        "Mick Jagger",
-        "Pep Guardiola",
-        "Jose Mourinho",
-        "Leonardo Bonucci",
-        "Angel Di Maria"
-    ];
+const employees = [];
 const team = {};
 
 const getNames = () => {
     for (let i = 0; i < positions.length; i++) {
-        const newEmployee = prompt('Enter the name of new employee');
+        const newEmployee = prompt(`Enter the name and familyname of new employee #${i + 1}`);
+        if (!newEmployee) {
+            alert('You entered wrong names and familyname. Enter F5 and try again');
+            breake;
+        }
         employees.push(newEmployee);
     }
 };
@@ -54,7 +49,7 @@ const setSalary = () => {
     }
 };
 
-// getNames();
+getNames();
 createTeam();
 setSalary();
 
