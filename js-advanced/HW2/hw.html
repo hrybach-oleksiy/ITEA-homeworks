@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="goods">
+            <h1 class="goods__title">Products</h1>
+            <form class="goods__sidebar">
+                <div class="goods__filter">
+                    <select id="goods-filter"
+                            class="js-goods-filter">
+                        <option value="all">Всі</option>
+                        <option value="new">new</option>
+                        <option value="sale">sale</option>
+                        <option value="low-price">price lower 1000₴</option>
+                        <option value="high-price">price higher 1000₴</option>
+                    </select>
+                </div>
+                <div class="goods__search">
+                    <input type="search"
+                           class="js-goods-search">
+                </div>
+                <div class="goods__sort">
+                    <p>Sort by</p>
+                    <div>
+                        <input type="radio"
+                               name="sort"
+                               class="goods__sort-item js-goods-sort"
+                               id="price"
+                               value="price">
+                        <label for="price">price</label>
+                    </div>
+                    <div>
+                        <input type="radio"
+                               name="sort"
+                               class="goods__sort-item js-goods-sort"
+                               id="alphabet"
+                               value="alphabet">
+                        <label for="alphabet">alphabet</label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="product-list">
+            </div>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.goods__title {
+    font-family: sans-serif;
+    color: navy;
+}
+
+.goods__sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    color: navy;
+}
+
+.goods__sort > p {
+    font-weight: 600;
+}
+
+.goods__sort > div {
+    display: flex;
+    align-items: center;
+}
+
+.goods__sidebar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+input[type=search],
+select {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid navy;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tile {
+    display: flex;
+    position: relative;
+    width: 25%;
+    min-width: 325px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.tile:hover {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.tile__link {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    text-decoration: none;
+    color: navy;
+    font-family: sans-serif;
+}
+
+.tile__badge {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: navy;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.tile__badge--new {
+    background: navy;
+}
+
+.tile__badge--sale {
+    background: red;
+}
+
+.tile__image {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    padding: 20px 0;
+}
+
+.tile__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tile__title {
+    flex-grow: 1;
+    display: block;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.tile__old-price {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.tile__new-price {
+    color: red;
+}
+
+.tile__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #58a158;
+}
