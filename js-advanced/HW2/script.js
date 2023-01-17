@@ -309,13 +309,9 @@ productSelect.addEventListener('change', event => {
 
 // search items TODO: process spaces case
 searchItemsElem.addEventListener('input', event => {
-    searchSymbol = event.target.value.toLowerCase();
-
-    // if (searchSymbol === ' ') {
-    //     searchSymbol = '';
-    // }
-
+    searchSymbol = event.target.value.toLowerCase().trim();
     const filteredGoods = filterCards(goods, searchSymbol);
+
     showCards(filteredGoods, productListElem);
 });
 
