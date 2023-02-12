@@ -21,12 +21,12 @@ class Pagination {
         currentBtn.classList.add(`${this.btnClass}--active`);
     }
 
-    changePage(parent, btnClass) {
+    changePage(parent) {
         parent.addEventListener('click', event => {
             const currentBtn = event.target;
             const currentPage = currentBtn.dataset.page;
 
-            if (currentBtn.classList.contains(`${btnClass}`)) {
+            if (currentBtn.classList.contains(`${this.btnClass}`)) {
                 user.setURLParams(currentPage);
             }
         });

@@ -7,5 +7,5 @@ user.getURLParams();
 const page = user.getPage();
 
 const pagination = new Pagination('pagination__item', page);
-pagination.changePage(paginationList, 'pagination__item');
+pagination.changePage(paginationList);
 
