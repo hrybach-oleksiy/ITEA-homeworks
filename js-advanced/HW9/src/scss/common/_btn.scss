@@ -1,0 +1,19 @@
+.btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #58a158;
+    }
+
+    &--blue {
+        background: navy;
+
+        &:hover {
+            background: #6b6bc9;
+        }
+    }
+}
