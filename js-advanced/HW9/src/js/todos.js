@@ -1,4 +1,14 @@
 import '@scss/todos';
-import article from '@/img/article'; ////
+import todolistImg from '@/img/todolist'; ////
+import Pagination from './components/Pagination';
+import Todos from './components/Todos';
 
-import '@components/Todos';
+const todos = new Todos();
+const pagination = new Pagination();
+
+const page = pagination.init();
+
+todos.getTodos(page);
+
+
+

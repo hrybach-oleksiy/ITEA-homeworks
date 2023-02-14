@@ -1,10 +1,16 @@
 .todos-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 30px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .todo {
@@ -15,7 +21,9 @@
     }
 
     &__info {
+        flex-grow: 1;
         display: flex;
+        flex-direction: column;
         gap: 10px;
         font-family: sans-serif;
         align-items: center;
@@ -26,9 +34,6 @@
         color: navy;
         text-transform: uppercase;
         margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
     &__user-id {
@@ -48,4 +53,16 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
+}
+
+.status {
+    font-weight: 700;
+}
+
+.status--completed {
+    color: green;
+}
+
+.status--pending {
+    color: red;
 }

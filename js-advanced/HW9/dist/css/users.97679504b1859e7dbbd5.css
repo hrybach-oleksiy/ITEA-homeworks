@@ -1,0 +1,71 @@
+/*!************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./scss/users.scss ***!
+  \************************************************************************************************************/
+.users {
+  padding: 50px 0;
+}
+.users__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user {
+  border: 2px solid navy;
+  padding: 20px;
+}
+.user__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user__img {
+  width: 100px;
+}
+.user__img img {
+  width: 100%;
+}
+.user__name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  font-family: sans-serif;
+}
+.user--inactive {
+  border-color: #ccc;
+  opacity: 0.5;
+}
+.user--active {
+  border-color: green;
+}
+
+.pagination {
+  padding: 50px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pagination__item {
+  padding: 5px 10px;
+  border: 2px solid navy;
+  color: navy;
+  cursor: pointer;
+}
+.pagination__item--active {
+  background: navy;
+  color: white;
+}
+
+/*# sourceMappingURL=users.97679504b1859e7dbbd5.css.map*/
