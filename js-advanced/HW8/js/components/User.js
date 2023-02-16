@@ -9,35 +9,6 @@ class User {
         userEmail: 'user__email',
     };
 
-    getPage() {
-        const currentURL = new URL(window.location);
-        const params = new URLSearchParams(currentURL.search);
-        const page = params.get('page') || 1;
-        return page;
-    }
-
-    setURLParams(value) {
-        const currentURL = new URL(window.location);
-        const params = new URLSearchParams(currentURL.search);
-
-        params.set('page', value);
-
-        currentURL.search = params.toString();
-        window.location.href = currentURL.toString();
-    }
-
-    getURLParams() {
-        const page = this.getPage();
-        const pagination = new Pagination('pagination__item', page);
-        pagination.setActiveBtn();
-
-        userApi.getUsers(page)
-            .then(result => {
-                this.showUsers(result);
-            })
-            .catch(err => console.log(err));
-    }
-
     createUserElem(tag, classNames) {
         const elem = document.createElement(tag);
         elem.classList.add(classNames);
@@ -80,6 +51,14 @@ class User {
             usersListElem.append(li);
 
         });
-    };
+    }
+
+    getUsers(page) {
+        return userApi.getUsers(page)
+            .then(result => {
+                this.showUsers(result);
+            })
+            .catch(err => console.log(err));
+    }
 }
 
