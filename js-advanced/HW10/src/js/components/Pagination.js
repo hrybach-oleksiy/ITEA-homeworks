@@ -29,18 +29,13 @@ export default class Pagination {
     _setCurrentPage(page) {
         params.set("page", page);
         url.search = params.toString();
-        todosParentElem.innerHTML = '';
-        setTimeout(() => {
-            location.href = url.toString();
-        }, 1000);
-
+        location.href = url.toString();
     }
 
     _setBtnsEvent() {
         paginationItems.forEach(btn => {
             btn.addEventListener('click', () => {
                 let page = btn.dataset.page;
-                this._addSpinner(todosElem);
                 this._setCurrentPage(page);
             });
         });
@@ -60,10 +55,14 @@ export default class Pagination {
 
     }
 
-    _addSpinner(parent) {
+    addSpinner(parent) {
         const spinner = this._createSpinner();
         spinner.classList.add('show');
         parent.append(spinner);
     }
 
+    removeSpinner() {
+        const spinner = document.querySelector('.lds-ring');
+        spinner.classList.remove('show');
+    }
 }

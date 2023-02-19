@@ -2,6 +2,7 @@ import StoreApi from '../api/StoreApi';
 import Pagination from '@components/Pagination';
 
 const todosApi = new StoreApi();
+const todosElem = document.querySelector('.todos');
 const parentElem = document.querySelector('.js-todos-list');
 const pagination = new Pagination();
 const page = pagination.init();
@@ -45,14 +46,14 @@ function getTodos(page) {
     return todosApi.getTodos(page)
         .then(res => {
             showTodos(res);
-
+        })
+        .finally(() => {
+            pagination.removeSpinner();
         });
-    // .finally(() => {
-    //     pagination.removeSpinner(parentElem);
-    // });
 }
 
 function initTodos(page) {
+    pagination.addSpinner(todosElem);
     getTodos(page);
 }
 
