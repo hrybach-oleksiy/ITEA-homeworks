@@ -1,7 +1,5 @@
 const wrapper = document.querySelector('.pagination__list');
 const paginationItems = document.querySelectorAll('.pagination__item');
-const todosElem = document.querySelector('.todos');////
-const todosParentElem = document.querySelector('.js-todos-list');/////
 const url = new URL(window.location);
 const params = new URLSearchParams(url.search);
 
