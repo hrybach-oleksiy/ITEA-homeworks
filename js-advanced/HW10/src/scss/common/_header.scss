@@ -1,0 +1,64 @@
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: 4px 2px 12px rgba(0, 0, 0, 0.8);
+    background: white;
+    z-index: 1;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        width: 100px;
+    }
+
+    &__logo img {
+        width: 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;    
+    list-style: none;
+
+    &__item a {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+
+    &__item {
+        position: relative;
+    }
+
+    &__count {
+        position: absolute;
+        top: 2px;
+        color: navy;
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+}

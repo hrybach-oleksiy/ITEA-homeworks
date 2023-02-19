@@ -1,0 +1,35 @@
+.goods {
+    &__title {
+        font-family: sans-serif;
+        color: navy;
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: sans-serif;
+        color: navy;
+
+        & > p {
+            font-weight: 600;
+        }
+
+        & > div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__sidebar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    input[type=search], select {
+        display: block;
+        padding: 10px 20px;
+        border: 2px solid navy;
+    }
+}

@@ -1,0 +1,17 @@
+.sale-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &__content {
+        width: 300px;
+    }
+
+    &__content img {
+        width: 100%
+    }
+}
