@@ -1,1 +1,42 @@
-.header {}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../assets/img/header-bg2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 100vh 100vh 50px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+
+.header__container {}
+
+.header__heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @include fluid-font(72, 48);
+
+    & span:first-child {
+        text-transform: capitalize;
+        font-style: italic;
+        @include fluid-font(36, 28);
+        font-weight: 300;
+    }
+
+    & span:last-child {
+        letter-spacing: 34px;
+        font-weight: 500;
+    }
+}
+
+.header__descr {
+    @include fluid-font(16, 14);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 1.5;
+    color: rgba(245, 241, 245, 0.9);
+}

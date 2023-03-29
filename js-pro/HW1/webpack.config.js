@@ -91,15 +91,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: `${fileName('.css')}`,
         }),
-        new CopyPlugin({
-            patterns: [
-                {
-                    from: path.join(__dirname, 'src', 'assets', 'sounds'),
-                    to: path.join(__dirname, 'dist', 'assets'),
-                },
-
-            ],
-        }),
     ],
     devServer: {
         watchFiles: path.join(__dirname, 'src'),
